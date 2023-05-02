@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  /* grid-template-columns: 10% 90%; */
+  margin-top: 5px;
+}
+/* Slider */
+.Slider {
+  margin-top: 5px;
+  width: 10%;
+}
+.Slider .list {
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.Slider ul li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+.Slider ul li:hover {
+  background-color: whitesmoke;
+}
+/* Video list */
+.video_button{
+  width: 80%;
+  margin: auto;
+}
+.btngroup {
+  position: relative;
+  height: max-content;
+}
+.btngroup .btnlist {
+  padding: 5px 0px;
+}
+.btngroup .nextbtn {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btngroup .nextbtn button,
+.btngroup .prevbtn button {
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 35px;
+  border-radius: 100%;
+}
+.btngroup .nextbtn button:hover,
+.btngroup .prevbtn button:hover {
+  box-shadow: 5px 5px 3px -1px whitesmoke, -5px 5px 3px -1px whitesmoke,
+    -5px 5px 3px -1px whitesmoke, 5px -5px 3px -1px whitesmoke;
+}
+.btngroup .prevbtn {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btnlist {
+  display: flex;
+  column-gap: 15px;
+  height: max-content;
+  overflow-x: hidden;
+  width: 92%;
+  margin: 0px 35px;
+  scroll-behavior: smooth;
+}
+.btnlist .btn button {
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 4px 12px;
+  width: max-content;
+}
+/* Video list */
+.videoconatiner .videocard {
+  height: 300px;
+  width: 360px;
+  /* border: 1px solid black; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.videoconatiner {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin: auto;
+  justify-content: space-between;
+}
+.videoconatiner .videocard .videoimg {
+  height: 65%;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+.videoconatiner .videocard .videoimg img {
+  height: 100%;
+  width: 100%;
+}

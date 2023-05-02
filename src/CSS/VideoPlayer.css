@@ -1,0 +1,42 @@
+.videoPlayerPage{
+    width: 80%;
+    margin: auto;
+}
+.videoPlayerPage .video_play{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.videoPlayerPage .video_play .video{
+    width: 60%;
+    height: 450px;
+}
+.videoPlayerPage .video_play .chatbox{
+    width: 30%;
+    height: 350px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* comments section */
+.videoPlayerPage .comments .comment-card{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 4px;
+    /* border: 1px solid black; */
+    height: max-content;
+    width: 60%;
+    margin:15px 0px;
+} 
+.videoPlayerPage .comments .comment-card .icon{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+.videoPlayerPage .comments .comment-card .icon img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
